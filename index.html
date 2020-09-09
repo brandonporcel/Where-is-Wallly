@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO -->
+		<meta
+			name="keywords"
+			content="where is wally, where is waldo, where is wally online, game online, , clickable picture"
+		/>
+		<meta
+			name="description"
+			content="The famous game 'Where is Wally/Waldo' online,now!"
+		/>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Where is Wally?</title>
+		<!-- STYLES -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon/wally.ico" />
+		<!-- ZOOM LIBRARY(SORRY IS JQUERY) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/zoom/blowup.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="overlay" class="overlay">
+			<div id="overlay-content" class="overlay__content">
+				<img src="img/wally_half_body.png" alt="wally body" loading="lazy" />
+				<h1>IM GONNA WAIT YOU BRO</h1>
+				<a href="#box" id="back-game">back to the game</a>
+				<small id="remaining-time"></small>
+			</div>
+			<div class="home">
+				<img
+					class="home__wally"
+					src="img/wally.png"
+					alt="wally/waldo greeting"
+					loading="lazy"
+				/>
+				<span class="home__greeting">HI,FRIENDS</span>
+				<p class="home__welcome">
+					I'M JUST SETTING OFF ON A WORLDWIDE HIKE
+					<br />
+					<b>if you want to come just look for me</b>
+				</p>
+			</div>
+
+			<div class="box" id="box">
+				<div class="gameHeaderWrapper">
+					<button id="startGame" type="button" class="gameHeaderWrapper__start">
+						START
+					</button>
+					<button id="playAgain" type="button" class="gameHeaderWrapper__playAgain">
+						Play Again
+					</button>
+
+					<div class="giveupPauseWrapper">
+						<span id="pauseGame" class="gameHeaderWrapper__pauseBox">
+							<a id="pause-text" onclick="return false" class="pauseBox__text" href="#">⏸</a>
+						</span>
+						<span id="give-up" class="giveupPauseWrapper__giveUp">Give up</span>
+					</div>
+					<div class="timerScoreWrapper">
+						<!-- <div class="scoreBox">
+							<span class="scoreBox__score-text">Score</span>
+							<span class="scoreBox__score">-/10</span>
+						</div> -->
+						<div class="countdownBox" id="countdown-box">
+							<span class="countdownBox__countdown-text">Countdown</span>
+							<span
+								class="gameHeaderWrapper__countdown countdownBox__countdown"
+								id="countdown"
+								>02m:00s</span
+							>
+						</div>
+					</div>
+				</div>
+				<div class="instructions">
+					<span class="instructions__text">
+						<b
+							>Just find Wally, there's no need to look for his friends and his tools. But
+							when time ends, you will be able to see them
+						</b>
+					</span>
+					<span class="instructions__text-2"> <b>Click</b> to find wally</span>
+				</div>
+				<small class="disclaimer-smallScreen"
+					>you are on a small screen. the game will not work here. find a computer. sorry
+					:(</small
+				>
+				<span class="closer-text" id="resultado"></span>
+				<div class="game" id="game-img-container">
+					<img
+						class="game__img"
+						id="img-game"
+						src="img/puzzle/beach.jpg"
+						alt="beach where is wally game"
+						loading="lazy"
+					/>
+					<div class="rta"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>
+				by
+				<a target="_blank" href="https://instagram.com/brandonporcel">@brandonporcel</a>
+				&#129505;
+			</p>
+			<small
+				>sorry,there are many defects,I know.it was my fault, it took longer than
+				expected,I got stressed out
+			</small>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>
